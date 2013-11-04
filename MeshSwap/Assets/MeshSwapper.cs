@@ -33,6 +33,10 @@ public class MeshSwapper : MonoBehaviour
 	{
 		InstanceCount++;
 	}
+	void OnDestroy()
+	{
+		InstanceCount--;
+	}
 	void Start () 
 	{
 		if (InstanceCount > 1)
